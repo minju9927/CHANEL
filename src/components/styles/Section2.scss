@@ -1,0 +1,130 @@
+.sc2 {
+    background-color: #000000;
+
+    .inner {
+        color: black;
+        display: flex;
+        gap: 4rem;
+        justify-content: flex-start;
+        max-width: none;
+
+        .img-wrap {
+            width: 45%;
+            height: 57rem;
+            overflow: hidden;
+            background: url(/img/intro_.png) no-repeat center top/cover;
+
+            // img {
+            //     display: block;
+            // }
+        }
+
+        .t-wrap {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            .con_tit {
+                font-size: 4.5rem;
+                color: #fff;
+                line-height: 8rem;
+            }
+
+            .txt {
+                line-height: 3.5rem;
+                text-align: left;
+                font-size: 3rem;
+            }
+        }
+    }
+
+    @media screen and (max-width:1380px) {
+        .inner {
+            .t-wrap {
+                .txt {
+                    font-size: 2.7rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1111px) {
+        .inner {
+            flex-direction: column;
+            gap: 5rem;
+            padding: 0 2rem;
+
+            .img-wrap {
+                width: 100%;
+                height: 57rem;
+            }
+
+            .t-wrap {
+
+                .con_tit {
+                    font-size: 4rem;
+                    line-height: 1.5rem;
+                }
+
+                .txt {
+                    font-size: 2.5rem;
+                }
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width:699px) {
+        .inner {
+            .img-wrap {
+                width: 100%;
+            }
+
+            .t-wrap {
+
+                .con_tit {
+                    font-size: 3rem;
+                    line-height: 1.5rem;
+                }
+
+                .txt {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+    }
+
+    @media screen and (max-width:550px) {
+        .inner {
+
+            .t-wrap {
+                .con_tit {
+                    font-size: 3rem;
+                    line-height: 1rem;
+                }
+
+                .txt {
+                    font-size: 1.8rem;
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width:499px) {
+        .inner {
+
+            .t-wrap {
+                .txt {
+                    font-size: 1.5rem;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,193 @@
+.sc3 {
+    padding: 15rem 0 0;
+
+    &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 10rem;
+        bottom: 0;
+        background-color: #fff;
+        z-index: -1;
+    }
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .t-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+        }
+
+        .con_tit {
+            font-size: 6rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .vintage {
+            position: relative;
+            display: inline-block;
+            color: white;
+            z-index: 1;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: -100%;
+                top: 0;
+                width: 210%;
+                height: 100%;
+                background-color: black;
+                z-index: -1;
+            }
+        }
+
+        .txt {
+            color: #616161;
+        }
+
+        .con_btn .blue:hover {
+            background-color: #000;
+            color: #fff;
+
+        }
+
+        // brand_talk_img1~4.png
+        .s3_sl_wrap {
+            position: relative;
+            margin-top: 2rem;
+            width: 37rem;
+            height: 66rem;
+            // left: -14rem;
+
+            .in {
+                position: absolute;
+                width: 200%;
+                height: 100%;
+                overflow: hidden;
+
+                .swiper {
+                    height: 100%;
+
+                    .swiper-slide>div {
+                        height: 100%;
+                        width: 100%;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+
+                    }
+
+                    .s3_sl_1 {
+                        background-image: url(/img/brand_talk_img1.png);
+                    }
+
+                    .s3_sl_2 {
+                        background-image: url(/img/brand_talk_img2.png);
+                    }
+
+                    .s3_sl_3 {
+                        background-image: url(/img/brand_talk_img3.png);
+                    }
+
+                    .s3_sl_4 {
+                        background-image: url(/img/brand_talk_img4.png);
+                    }
+
+                    .s3_sl_5 {
+                        background-image: url(/img/brand_talk_img5.png);
+                    }
+
+                    .s3_sl_6 {
+                        background-image: url(/img/brand_talk_img6.png);
+                    }
+
+                    .s3_sl_7 {
+                        background-image: url(/img/brand_talk_img7.png);
+                    }
+
+                    .s3_sl_8 {
+                        background-image: url(/img/brand_talk_img8.png);
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media screen and (max-width:1111px) {
+        .inner {
+            flex-direction: column;
+            gap: 5rem;
+            padding: 0 2rem;
+
+            .con_tit {
+                font-size: 4rem;
+            }
+
+            .vintage {
+                &::before {
+                    height: 200%;
+                    top: -1.5rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:800px) {
+        .inner {
+            .t-wrap {
+                gap: 3rem;
+            }
+
+            .s3_sl_wrap {
+                width: 30rem;
+                height: 60rem;
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .vintage {
+                &::before {
+                    height: 200%;
+                    top: -1.5rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .inner {
+            .s3_sl_wrap {
+                width: 40rem;
+                // height: 30rem;
+            }
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        .inner {
+            .s3_sl_wrap {
+                width: 30rem;
+            }
+
+            .con_tit {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    @media screen and (max-width:450px) {
+        .sc3 {
+            padding: 0;
+        }
+    }
+}

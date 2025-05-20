@@ -1,0 +1,42 @@
+.sc4 {
+    background-color: black;
+    margin-top: 4rem;
+
+    .inner {
+        max-width: 160rem;
+        display: block;
+
+        .con_tit {
+            color: #ffffff;
+        }
+
+        .txt_4 {
+            color: #ffffff;
+        }
+
+        .s4_lst {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+            gap: 2.5rem;
+
+
+            li{
+                width: 17rem;
+                height: 26rem;
+                overflow: hidden;
+        
+                a {
+                    height: 100%;
+        
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

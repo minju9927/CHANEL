@@ -1,0 +1,184 @@
+.sc1 {
+    background-color: #ffffff;
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-direction: column;
+
+        .con_tit {
+            color: #000000;
+            font-size: 6rem;
+        }
+
+        .s1_slider {
+            margin-top: 7rem;
+            padding: 4rem 0;
+            width: 100%;
+
+            .s1-btn {
+                display: inline-flex;
+                border: .1rem solid #252D37;
+                font-size: 1.3rem;
+                padding: 1.3rem 1.8rem 1.1rem;
+                border-radius: 6rem;
+                font-weight: 500;
+
+            }
+
+            .name {
+                font-size: 2rem;
+                line-height: 1;
+                color: #000000;
+                font-weight: 500;
+                letter-spacing: 0;
+                font-family: "Source Serif Pro", serif;
+                margin: 2rem 0 1.5rem;
+            }
+
+            .kname {
+                font-size: 1.5rem;
+                color: #231f20;
+                font-weight: 500;
+                display: flex;
+                justify-content: center;
+
+            }
+
+            .img-wrap {
+                width: 36rem;
+                background-color: #fff;
+                align-items: center;
+                margin: 2.5rem auto 3rem;
+                border-radius: 1rem;
+                overflow: hidden;
+                height: 30rem;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                bottom: 2rem;
+
+                img {
+                    animation: up 1.5s alternate infinite ease-in-out;
+                }
+            }
+
+            .amount {
+                font-size: 2rem;
+            }
+
+            .swiper-pagination-progressbar {
+                width: 122rem;
+                margin: 3rem auto 0;
+                position: static;
+                background-color: #00000021;
+
+                .swiper-pagination-progressbar-fill {
+                    background-color: #030303;
+                }
+            }
+        }
+
+        .custom-prev,
+        .custom-next {
+            width: 3.5rem;
+            height: 6.7rem;
+            position: absolute;
+            z-index: 3;
+            top: calc(50% + 13rem);
+            outline: none;
+            border: none;
+        }
+
+        .custom-prev {
+            left: -2rem;
+            background: url(/img/pd_slide_arrow_prev.svg) no-repeat center/contain;
+        }
+
+        .custom-next {
+            right: -2rem;
+            background: url(/img/pd_slide_arrow_next.svg) no-repeat center/contain;
+        }
+
+        .pagination {
+            position: relative;
+            width: 90%;
+            height: 4px;
+            background: #ffffff;
+            margin: 0 auto 1.5rem;
+
+
+            .swiper-pagination-progressbar-fill {
+                background-color: #009BDE;
+                height: 100%;
+            }
+        }
+    }
+
+    @keyframes up {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-1.2rem);
+        }
+
+    }
+
+    @media screen and (max-width:1111px) {
+        .inner {
+
+            .sc1-slider-wrap {
+                .in {
+                    width: 120rem;
+                }
+            }
+
+            .custom-prev,
+            .custom-next {
+                display: none;
+            }
+        }
+
+    }
+
+    @media screen and (max-width:999px) {
+        .inner {
+            .con_tit {
+                font-size: 5.5rem;
+            }
+
+            .sc1-slider-wrap .in {
+                width: 100rem;
+            }
+
+            .s1_slider .img-wrap {
+                width: 28rem;
+            }
+        }
+
+    }
+
+    @media screen and (max-width:560px) {
+        .inner {
+            .con_tit {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    @media screen and (max-width:399px) {
+        .inner {
+            .con_tit {
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+
+            .s1_slider {
+                margin-top: 0;
+            }
+        }
+    }
+}
