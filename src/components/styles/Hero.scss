@@ -273,15 +273,94 @@
     }
 
     @media screen and (max-width:499px) {
-                .swiper-slide {
+        .swiper-slide {
             .t-wrap {
                 top: 25rem;
             }
+
             .bg {
                 background-position: right bottom;
                 background-size: 50rem;
             }
         }
     }
+
+    @media screen and (max-width:360px) {
+
+        .swiper-slide {
+            .con_tit.large {
+                font-size: 3rem;
+                line-height: 4rem;
+            }
+
+            .t-wrap {
+                top: 30rem;
+            }
+
+            .inner .t-wrap {
+                .txt {
+                    display: none;
+                }
+
+                .con_btn {
+                    padding: 1.2rem 3rem;
+                    font-size: 1.4rem;
+                    margin-top: 0rem;
+                }
+            }
+
+            .bg {
+                background-position: center bottom;
+                background-size: 40rem;
+            }
+        }
+
+        .hero_nav {
+            left: 3vw;
+
+            .swiper-pagination-current {
+                font-size: 2rem;
+            }
+
+            .swiper-pagination {
+                &:after {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 40px;
+                    background-color: #fff;
+                    top: 65%;
+                    left: 30%;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                }
+
+                .swiper-pagination-current {
+                    position: absolute;
+                    font-size: 1.8rem;
+                    top: 1rem;
+                    left: 0;
+                }
+
+                .swiper-pagination-total {
+                    position: absolute;
+                    font-size: 1.8rem;
+                    right: 2rem;
+                    bottom: -.8rem;
+                }
+            }
+        }
+
+        .arr_prev {
+            display: none;
+        }
+
+        .arr_next {
+            display: none;
+        }
+
+
+    }
+
 
 }

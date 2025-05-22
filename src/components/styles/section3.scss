@@ -1,5 +1,5 @@
 .sc3 {
-    padding: 15rem 0 0;
+    // margin-top: 10rem;
 
     &::after {
         display: block;
@@ -186,8 +186,29 @@
     }
 
     @media screen and (max-width:450px) {
-        .sc3 {
-            padding: 0;
+            .inner {
+                gap: 2rem;
+
+                .img-lg img {
+                    width: auto;
+                    height: 10rem;
+                }
+        }
+    }
+
+    @media screen and (max-width:360px) {
+            .inner {
+                gap: 2rem;
+
+                .img-lg img {
+                    width: auto;
+                    height: 9rem;
+                }
+                .con_btn{
+                    margin-top: 0;
+                    font-size: 1.4rem;
+                    padding: 1.2rem 3rem;
+                }
         }
     }
 }

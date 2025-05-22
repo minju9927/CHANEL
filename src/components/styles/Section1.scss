@@ -70,7 +70,7 @@
 
             .swiper-pagination-progressbar {
                 width: 122rem;
-                margin: 3rem auto 0;
+                margin: 8rem auto 0;
                 position: static;
                 background-color: #00000021;
 
@@ -105,12 +105,12 @@
             position: relative;
             width: 90%;
             height: 4px;
-            background: #ffffff;
+            background: #00000028;
             margin: 0 auto 1.5rem;
 
 
             .swiper-pagination-progressbar-fill {
-                background-color: #009BDE;
+                background-color: #000000;
                 height: 100%;
             }
         }
@@ -133,6 +133,7 @@
             .sc1-slider-wrap {
                 .in {
                     width: 120rem;
+                    height: 56rem;
                 }
             }
 
@@ -166,18 +167,28 @@
             .con_tit {
                 font-size: 4rem;
             }
+
+            .s1_slider .img-wrap {
+                width: 24rem;
+                height: 24rem;
+            }
         }
     }
 
-    @media screen and (max-width:399px) {
+    @media screen and (max-width:370px) {
         .inner {
             .con_tit {
-                font-size: 4rem;
+                font-size: 3.7rem;
                 line-height: 4rem;
             }
 
             .s1_slider {
                 margin-top: 0;
+            }
+
+            .s1_slider .img-wrap {
+                width: 22rem;
+                height: 25rem;
             }
         }
     }

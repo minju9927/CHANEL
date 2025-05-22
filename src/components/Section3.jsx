@@ -19,10 +19,10 @@ const Section3 = () => {
             <div className="inner">
                 <div className="t-wrap">
                     <div className="img-lg">
-                        <img src="/img/s3_logo.svg" alt="" />
+                        <img src="./img/s3_logo.svg" alt="" />
                     </div>
                     <h2 className="con_tit">
-                        <span className="vintage">VINTAGE CHANEL</span> 
+                        <span className="vintage">VINTAGE CHANEL</span>
                     </h2>
                     <p className="txt">
                         “Fashion fades, only style remains the same” <br />
@@ -37,6 +37,7 @@ const Section3 = () => {
                         <Swiper
                             spaceBetween={22}
                             slidesPerView={2.3}
+                            loop={true}
                             breakpoints={{
                                 1024: {
                                     slidesPerView: 2.08
