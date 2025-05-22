@@ -272,7 +272,7 @@
         }
     }
 
-    @media screen and (max-width:499px) {
+    @media screen and (max-width:599px) {
         .swiper-slide {
             .t-wrap {
                 top: 25rem;
@@ -282,10 +282,19 @@
                 background-position: right bottom;
                 background-size: 50rem;
             }
+
+        }
+
+        .arr_prev {
+            display: none;
+        }
+
+        .arr_next {
+            display: none;
         }
     }
 
-    @media screen and (max-width:360px) {
+    @media screen and (max-width:410px) {
 
         .swiper-slide {
             .con_tit.large {
